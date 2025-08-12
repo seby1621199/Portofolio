@@ -9,6 +9,8 @@ export default function Home() {
     <section
       style={{
         display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
         alignItems: "center",
         minHeight: "60vh",
         padding: "2rem",

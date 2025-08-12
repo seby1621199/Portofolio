@@ -9,32 +9,32 @@ export default function Navbar() {
       className="navbar"
       style={{ backgroundColor: dark ? "#1a202c" : "#fff", color: dark ? "#fff" : "#1a202c" }}
     >
-      <div className="flex flex-nowrap justify-around items-center">
+      <div className="flex">
         <Link
           to="/"
           style={{ color: dark ? "#90cdf4" : "#2563eb" }}
-          className="px-4 py-2 rounded-lg font-medium hover:bg-blue-100 hover:text-blue-900 transition-all duration-200"
+          className="nav-link"
         >
           Home
         </Link>
         <Link
           to="/contact"
           style={{ color: dark ? "#90cdf4" : "#2563eb" }}
-          className="px-4 py-2 rounded-lg font-medium hover:bg-blue-100 hover:text-blue-900 transition-all duration-200"
+          className="nav-link"
         >
           Contact
         </Link>
         <Link
           to="/project"
           style={{ color: dark ? "#90cdf4" : "#2563eb" }}
-          className="px-4 py-2 rounded-lg font-medium hover:bg-blue-100 hover:text-blue-900 transition-all duration-200"
+          className="nav-link"
         >
           Projects
         </Link>
         <button
           onClick={toggleTheme}
           style={{ backgroundColor: dark ? "#2d3748" : "#bfdbfe", color: dark ? "#fff" : "#1e40af" }}
-          className="ml-6 px-4 py-2 rounded-lg font-semibold transition-all duration-200"
+          className="nav-btn"
         >
           {dark ? "Dark" : "Light"}
         </button>
