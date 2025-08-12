@@ -1,0 +1,102 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar .flex {
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar a {
+  margin: 0 1.5rem;
+}
+
+main {
+  padding-top: 70px;
+}
+.name{
+  color:#e4e449
+}
+
+
+.contact-form-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #eff6ff 0%, #fff 60%, #dbeafe 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(30, 64, 175, 0.12);
+  border: 1px solid #dbeafe;
+}
+.contact-form-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #2563eb;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.contact-form-label {
+  font-weight: 600;
+  color: #2563eb;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
+}
+.contact-form-input, .contact-form-textarea {
+  border: 1px solid #bfdbfe;
+  border-radius: 0.75rem;
+  padding: 0.8rem 1rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(30, 64, 175, 0.04);
+  transition: box-shadow 0.2s, border-color 0.2s;
+  font-size: 1rem;
+  width: 100%;
+}
+.contact-form-input:focus, .contact-form-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #60a5fa33;
+}
+.contact-form-textarea {
+  min-height: 120px;
+  resize: none;
+}
+.contact-form-button {
+  background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.9rem 0;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(30, 64, 175, 0.10);
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+  letter-spacing: 0.04em;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+.contact-form-button:hover {
+  background: linear-gradient(90deg, #1e40af 0%, #2563eb 100%);
+  box-shadow: 0 4px 16px rgba(30, 64, 175, 0.18);
+  transform: scale(0.98);
+}
