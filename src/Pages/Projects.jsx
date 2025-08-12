@@ -17,8 +17,8 @@ export default function Projects() {
   }, []);
 
   return (
-    <div>
-      <h1 className="text-2xl font-bold mb-6">Proiecte GitHub</h1>
+    <div style={{marginTop: "50px"}}>
+      <h1 className="text-2xl font-bold mb-6" style={{padding:'30px'}}>Proiecte GitHub</h1>
       <div className="flex flex-col gap-8">
         {projects.map((project) => (
           <ProjectCard
